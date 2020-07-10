@@ -8,6 +8,8 @@ requirements and testing needs grow. So I used PyTest and the Requests library, 
 libraries but extremely popular ones.
 
 The test has been written to handle *PASS* for the happy path, and *FAIL* for http errors, timeouts, and other exceptions
+To test the failure case, set the timeout *pytest.mark.timeout(30)* in the fixture used in tests/test_availability.py
+to a very small value. **e.g 0.0003**. 
 
 # Files and directories in the repo
 
